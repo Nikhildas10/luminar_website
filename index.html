@@ -11,24 +11,37 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <style>
-       .nav-item  a {
+        .navbar-nav .nav-item a {
             position: relative;
+           
         }
-       .nav-item a::after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        transform: translateX(-50%);
-        background:  rgb(88, 15, 156);
-        transition: width 0.3s;
-       }
-       .nav-item a:hover::after{
+        
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background: rgb(88, 15, 156);
+            transition: width 0.3s;
+            
+        }
+
+        .nav-item a:hover::after  {
             width: 100%;
-       }
+
+        }
        
+        .navbar-nav .nav-item a:hover ,.navbar-nav .nav-item a:focus {
+            color: rgb(88, 15, 156);
+            
+        }
+        .navbar-nav .nav-item a:focus::after{
+            width: 100%;
+        }
+        
     </style>
 </head>
 
@@ -37,7 +50,7 @@
         <div class="container pe-5 ps-5">
 
             <a class="navbar-brand" href="#"><img src="./img/logo vanner 0.1.ad159943.png" alt=""
-                    style="width: 15rem;;"></a>
+                    style="width: 15rem;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,28 +58,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold fs-5" aria-current="page" href="#"
-                            style="color: rgb(88, 15, 156);">Home</a>
+                        <a class="nav-link active fw-bold fs-6" aria-current="page" href="#">Home</a>
 
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold fs-5" aria-current="page" href="#"
-                            style="color: rgba(0, 0, 0, 0.803);">Courses</a>
+                        <a class="nav-link active fw-bold fs-6" aria-current="page" href="#">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold fs-5" aria-current="page" href="#"
-                            style="color: rgba(0, 0, 0, 0.803);">Placements</a>
+                        <a class="nav-link active fw-bold fs-6" aria-current="page" href="#">Placements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold fs-5" aria-current="page" href="#"
-                            style="color: rgba(0, 0, 0, 0.803);">Gallery</a>
+                        <a class="nav-link active fw-bold fs-6" aria-current="page" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold fs-5" aria-current="page" href="#"
-                            style="color: rgba(0, 0, 0, 0.803);">About us</a>
+                        <a class="nav-link active fw-bold fs-6" aria-current="page" href="#">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold fs-5" aria-current="page" href="#"
-                            style="color: rgba(0, 0, 0, 0.803);">Contact</a>
+                        <a class="nav-link active fw-bold fs-6" aria-current="page" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
