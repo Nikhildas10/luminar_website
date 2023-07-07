@@ -88,7 +88,17 @@
  padding-bottom: 5px ;
  padding-top: 5px;
 }
-
+.carousel-inner .carousel-caption h1 ,.carousel-inner .carousel-caption p,.carousel-inner .carousel-caption .btn-secondary{
+    position: relative;
+    animation: slideup forwards ease 1s;
+}
+@keyframes slideup{
+    0%{transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
     </style>
 </head>
 
@@ -168,6 +178,7 @@
         </button>
     </div>
     <!-- Button trigger modal -->
+   
 <button type="button" class="btn btn-secondary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Launch Modal
   </button>
@@ -189,9 +200,9 @@
             <input type="text" placeholder="Phone Number"><br><hr>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Select course interested in</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">python</option>
+                <option value="2">mearn</option>
+                <option value="3">data science</option>
               </select><hr>
               <input type="text" placeholder="City"><br><hr>
               <input type="text" placeholder="Comments"><br><hr>
